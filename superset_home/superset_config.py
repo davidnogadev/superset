@@ -1,6 +1,7 @@
 import os
 
 # Clave secreta para la aplicación
+# ejecutar: openssl rand -base64 42 para generar
 SECRET_KEY = os.getenv('SUPERSET_SECRET_KEY', 'default_insecure_key')
 
 # Construir la URL de conexión a la base de datos utilizando las variables de entorno
